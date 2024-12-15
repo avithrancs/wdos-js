@@ -1,0 +1,184 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-family: 'Lato', 'Montserrat'; /* Font for navigation bar */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat';
+}
+
+/* Other text elements*/
+p, label, input, select {
+    font-family: 'Montserrat';
+}
+
+/* Colors */
+:root {
+    --primary-color: #bccbcf; /* Header and footer color */
+    --secondary-color: #15294e; /* Dark blue for accents */
+    --text-color: #000000;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+}
+
+header .logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* Service Detail Section Styles */
+.service-detail {
+    padding: 30px;
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
+.service-detail img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.service-detail h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color:white;
+}
+
+.service-detail p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+    border-radius: 2;
+    padding: 2;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    text-align: center;
+    flex-basis: 100%;
+    margin: 10px 0;
+}
+
+.footer-logo img {
+    max-width: 100px; /* Adjust the size of the logo */
+}
+
+.footer-info p,
+.footer-info .social-media a {
+    margin: 0;
+    color: var(--text-color);
+}
+
+.footer-info .social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-info .social-media a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-info .social-media,
+    .footer-info p,
+    .footer-logo {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo img {
+        max-width: 80px; /* Adjust the size for smaller screens */
+    }
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.social-media a i {
+    margin-right: 5px;
+    font-size: 1.2em;
+}
+
+/*hover effects */
+.social-media a:hover {
+    color: #007BFF; /* Change color on hover */
+}

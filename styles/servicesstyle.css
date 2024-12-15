@@ -1,0 +1,274 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-family: 'Lato', 'Montserrat'; /* Font for navigation bar */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat';
+}
+
+/* Other text elements*/
+p, label, input, select {
+    font-family: 'Montserrat';
+}
+
+/* Colors */
+:root {
+    --primary-color: #bccbcf; /* Header and footer color */
+    --secondary-color: #15294e; /* Dark blue for accents */
+    --text-color: #000000;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+}
+
+header .logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* Image Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 5px;
+    text-size-adjust: 50%;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    font-size: 2rem;
+}
+
+/* Intro */
+.intro {
+    text-align: justify;
+    padding: 20px;
+    background:white;
+}
+
+.intro-content h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+}
+
+.intro-content p {
+    text-align: center;
+    margin: 1;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+}
+
+/* Main Services Section Styles */
+.main-services {
+    padding: 30px;
+    background-color: var(--secondary-color);
+}
+
+.main-services h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 1.5em;
+    color: white;
+}
+
+.main-services .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transform: scale(1); 
+    opacity: 1;
+}
+
+.service-card {
+    display: block; /* Make the entire card clickable */
+    text-decoration: none; /* Remove the underline from links */
+    color: inherit; /* Keep the text color as inherited */
+}
+
+
+/*animation */
+.service-card:hover {
+    transform: scale(1.05); /* enlarge the card */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow */
+    opacity: 0.9; /* fade effect */
+}
+
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Registration Button */
+.registration-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-register {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #000000;
+    background-color: white; /* Button color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-register:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    text-align: center;
+    flex-basis: 100%;
+    margin: 10px 0;
+}
+
+.footer-logo img {
+    max-width: 100px; /* Adjust the size of the logo */
+}
+
+.footer-info p,
+.footer-info .social-media a {
+    margin: 0;
+    color: var(--text-color);
+}
+
+.footer-info .social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-info .social-media a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero .hero-text {
+        width: 90%;
+    }
+
+    .footer-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-info .social-media,
+    .footer-info p,
+    .footer-logo {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo img {
+        max-width: 80px; /* Adjust the size for smaller screens */
+    }
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.social-media a i {
+    margin-right: 5px;
+    font-size: 1.2em;
+}
+
+/* hover effects */
+.social-media a:hover {
+    color: #007BFF; /* Change color on hover */
+}

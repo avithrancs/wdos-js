@@ -1,0 +1,217 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-family: 'Lato', 'Montserrat'; /* Font for navigation bar */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat';
+}
+
+/* Other text elements*/
+p, label, input, select {
+    font-family: 'Montserrat';
+}
+
+/* Colors */
+:root {
+    --primary-color: #bccbcf; /* Header and footer color */
+    --secondary-color: #15294e; /* Dark blue for accents */
+    --text-color: #000000;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+}
+
+header .logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* Introduction Section */
+.intro {
+    background-color: #f9f9f9;
+    padding: 30px;
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro-content h1 {
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+.intro-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+/* Doctors Section Styles */
+.doctors {
+    padding: 30px;
+    background-color: var(--secondary-color);
+}
+
+.doctors h2{
+    color: white;
+    text-align: center;
+}
+
+.doctors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid with min-width */
+    gap: 20px;
+    background-color: var(--secondary-color);
+}
+
+.doctor-card {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added shadow for better visual effect */
+}
+
+.doctor-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.doctor-card p {
+    text-align: justify;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    text-align: center;
+    flex-basis: 100%;
+    margin: 10px 0;
+}
+
+.footer-logo img {
+    max-width: 100px; /* Adjust the size of the logo */
+}
+
+.footer-info p,
+.footer-info .social-media a {
+    margin: 0;
+    color: var(--text-color);
+}
+
+.footer-info .social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-info .social-media a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .doctors-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust columns for smaller screens */
+    }
+
+    .footer-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-info .social-media,
+    .footer-info p,
+    .footer-logo {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo img {
+        max-width: 80px; /* Adjust the size for smaller screens */
+    }
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.social-media a i {
+    margin-right: 5px;
+    font-size: 1.2em;
+}
+
+/* change hover effects */
+.social-media a:hover {
+    color: #007BFF; /* Change color on hover */
+}

@@ -1,0 +1,170 @@
+[
+    {
+        "name": "Paracetamol",
+        "price": 5.50,
+        "img": "images/paracetamol.jpg",
+        "category": "Analgesics"
+    },
+    {
+        "name": "Ibuprofen",
+        "price": 7.28,
+        "img": "images/ibuprofen.jpg",
+        "category": "Analgesics"
+    },
+    {
+        "name": "Aspirin",
+        "price": 4.16,
+        "img": "images/asprin.jpg",
+        "category": "Analgesics"
+    },
+    {
+        "name": "Codeine",
+        "price": 8.96,
+        "img": "images/codein.jpg",
+        "category": "Analgesics"
+    },
+    {
+        "name": "Naproxen",
+        "price": 6.64,
+        "img": "images/Naproxen.png",
+        "category": "Analgesics"
+    },
+    {
+        "name": "Diclofenac",
+        "price": 9.90,
+        "img": "images/diclofenac.jpg",
+        "category": "Analgesics"
+    },
+    {
+        "name": "Amoxicillin",
+        "price": 10.05,
+        "img": "images/amoxicillin.jpg",
+        "category": "Antibiotics"
+    },
+    {
+        "name": "Ciprofloxacin",
+        "price": 12.74,
+        "img": "images/ciprofloxacin.png",
+        "category": "Antibiotics"
+    },
+    {
+        "name": "Azithromycin",
+        "price": 14.72,
+        "img": "images/azithromycin.jpg",
+        "category": "Antibiotics"
+    },
+    {
+        "name": "Doxycycline",
+        "price": 15.83,
+        "img": "images/Doxycycline.jpeg",
+        "category": "Antibiotics"
+    },
+    {
+        "name": "Cephalexin",
+        "price": 13.82,
+        "img": "images/cephalexin.webp",
+        "category": "Antibiotics"
+    },
+    {
+        "name": "Levofloxacin",
+        "price": 18.63,
+        "img": "images/levofloxacin.jpg",
+        "category": "Antibiotics"
+    },
+    {
+        "name": "Fluoxetine",
+        "price": 16.29,
+        "img": "images/fluoxetine.jpg",
+        "category": "Antidepressants"
+    },
+    {
+        "name": "Sertraline",
+        "price": 14.03,
+        "img": "images/sertraline.jpg",
+        "category": "Antidepressants"
+    },
+    {
+        "name": "Citalopram",
+        "price": 15.83,
+        "img": "images/citalopram.jpg",
+        "category": "Antidepressants"
+    },
+    {
+        "name": "Venlafaxine",
+        "price": 18.38,
+        "img": "images/venlafaxine.png",
+        "category": "Antidepressants"
+    },
+    {
+        "name": "Duloxetine",
+        "price": 20.63,
+        "img": "images/duloxetine.jpg",
+        "category": "Antidepressants"
+    },
+    {
+        "name": "Amitriptyline",
+        "price": 11.21,
+        "img": "images/amitriptyline.jpg",
+        "category": "Antidepressants"
+    },
+    {
+        "name": "Loratadine",
+        "price": 6.45,
+        "img": "images/loratadine.webp",
+        "category": "Antihistamines"
+    },
+    {
+        "name": "Cetirizine",
+        "price": 7.73,
+        "img": "images/cetirizine.jpg",
+        "category": "Antihistamines"
+    },
+    {
+        "name": "Fexofenadine",
+        "price": 8.92,
+        "img": "images/fexofenadine.jpg",
+        "category": "Antihistamines"
+    },
+    {
+        "name": "Chlorpheniramine",
+        "price": 5.93,
+        "img": "images/chlorpheniramine.jpg",
+        "category": "Antihistamines"
+    },
+    {
+        "name": "Lisinopril",
+        "price": 10.80,
+        "img": "images/lisinopril.png",
+        "category": "Antihypertensives"
+    },
+    {
+        "name": "Amlodipine",
+        "price": 9.20,
+        "img": "images/amlodipine.png",
+        "category": "Antihypertensives"
+    },
+    {
+        "name": "Losartan",
+        "price": 11.33,
+        "img": "images/losartan.webp",
+        "category": "Antihypertensives"
+    },
+    {
+        "name": "Metoprolol",
+        "price": 12.48,
+        "img": "images/metoprolol.jpg",
+        "category": "Antihypertensives"
+    },
+    {
+        "name": "Hydrochlorothiazide",
+        "price": 8.96,
+        "img": "images/hydrochlorothiazide.avif",
+        "category": "Antihypertensives"
+    },
+    {
+        "name": "Carvedilol",
+        "price": 13.29,
+        "img": "images/carvedilol.jpeg",
+        "category": "Antihypertensives"
+    }
+]

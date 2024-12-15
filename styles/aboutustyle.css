@@ -1,0 +1,262 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+/* General Styles for body, navigation links, and headings */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Color variables */
+:root {
+    --primary-color: #bccbcf;
+    --secondary-color: #15294e;
+    --text-color: #000000;
+    --background-light: #eaeaea;
+    --background-dark: #15294e;
+}
+
+/* Header layout and navigation styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+}
+
+header .logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* Section Headers */
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+/* Mission Statement Section styling */
+.mission-statement {
+    padding: 20px;
+    background-color: var(--background-light);
+}
+
+.mission-statement p {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* History Section styling */
+.history {
+    background-color: var(--background-dark);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.history h2 {
+    color: white;
+}
+
+.history p {
+    color: white;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Branches Section */
+.branch-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.branch {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.branch .map,
+.branch .branch-image {
+    flex: 1;
+    margin: 10px;
+    min-width: 250px;
+}
+
+.branch .map img,
+.branch .branch-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.description {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.description p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Information Table Section */
+.information-table {
+    padding: 20px;
+    background-color: var(--background-light);
+}
+
+.information-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.information-table th, .information-table td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.information-table tfoot td {
+    text-align: center;
+    font-weight: bold;
+    background-color: #ccc;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    text-align: center;
+    flex-basis: 100%;
+    margin: 10px 0;
+}
+
+.footer-logo img {
+    max-width: 100px;
+}
+
+.footer-info p, .footer-info .social-media a {
+    margin: 0;
+    color: var(--text-color);
+}
+
+.footer-info .social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-info .social-media a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 844px) {
+    nav ul {
+        flex-direction: column;
+        text-align: right;
+    }
+
+    .branch-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .branch-map {
+        width: 50%;
+        text-align: center;
+    }
+
+    .mission-statement, .history, .information-table {
+        padding: 15px;
+    }
+
+    footer .footer-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-info .social-media {
+        justify-content: center;
+    }
+
+    .footer-logo img {
+        max-width: 80px;
+    }
+
+    .footer-info .social-media a {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .branch {
+        flex-direction: column;
+        
+    }
+
+    .branch .map {
+        max-width: 50%;
+    }
+
+    s
+    .branch .branch-image {
+        max-width: 100%;
+    }
+
+    
+    .branch .branch-image img {
+        max-width: 100%;
+    }
+}

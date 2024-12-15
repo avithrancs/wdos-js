@@ -1,0 +1,430 @@
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
+
+/* General Styles */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat';
+}
+
+/* Section Headers */
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+
+}
+
+/* Variables */
+:root {
+    --primary-color: #bccbcf; /* Header and footer background */
+    --secondary-color: #15294e; /* Dark blue for accents */
+    --text-color: #000000; /* Standard text color */
+    --hover-color: #007BFF; /* Hover effect color */
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--hover-color);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+}
+
+header .logo img {
+    max-height: 50px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Image Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 5px;
+    text-size-adjust: 50%;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    font-size: 2rem;
+}
+
+/* Pharmacy Showcase */
+.pharmacy-showcase {
+    padding: 30px;
+}
+
+.pharmacy-showcase h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.showcase-item {
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.showcase-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.showcase-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+/* General styles for the medicine section */
+#medicine-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual medicine cards */
+.medicine-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Medicine image styling */
+.medicine-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Medicine name styling */
+.medicine-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Medicine price styling */
+.medicine-card p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Add to Order button styling */
+.medicine-card button {
+    background-color: #15294e;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-container {
+    margin: 10px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-input {
+    width: 100px;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+
+/* Add to Order button hover effect */
+.medicine-card button:hover {
+    background-color: #ffffff;
+}
+
+/* General Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Header */
+table thead th {
+    background-color: #15294e; /* Green header */
+    color: white;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-transform: uppercase;
+}
+
+/* Table Body */
+table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f2f2f2; /* Alternate row color */
+}
+
+table tbody td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+
+
+/* Table Footer */
+table tfoot td {
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 15px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid #ddd;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically if needed */
+    margin: 20px 0;         /* Add spacing if necessary */
+    gap: 10px;              /* Spacing between buttons */
+}
+
+.button {
+    background-color: #15294e;
+    color: #fdfeff;
+    border: #15294e;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+    justify-content: center;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    flex-wrap: wrap;
+}
+
+.footer-logo img {
+    max-width: 100px;
+}
+
+.footer-info .social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-info .social-media a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-info .social-media a:hover {
+    color: var(--hover-color);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo img {
+        max-width: 80px;
+    }
+}
+
+
+/* Payment Form Container */
+.payment-form {
+    max-width: 70%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    /* border: 2px solid #000000; */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Form Title */
+.payment-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Groups */
+.payment-form .form-group {
+    margin-bottom: 15px;
+}
+
+/* Input Labels */
+.payment-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+/* Input Fields */
+.payment-form input,
+.payment-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.payment-form input:focus,
+.payment-form select:focus {
+    border-color: #15294e;
+    outline: none;
+}
+ .payment-form textarea{
+    border: 1px solid #000000;  
+ }
+
+/* Credit Card Section */
+.payment-form .credit-card-details {
+    display: none;
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+/* Submit Button */
+.payment-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #15294e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.payment-form button:hover {
+    background-color: #bccbcf;
+}
+
+/* Error and Success Messages */
+.payment-form .message {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.payment-form .success {
+    color: green;
+}
+
+.payment-form .error {
+    color: red;
+}

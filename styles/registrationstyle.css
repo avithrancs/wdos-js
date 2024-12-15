@@ -1,0 +1,256 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-family: 'Lato', 'Montserrat'; /* Font for navigation bar */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat';
+}
+
+/* Other text elements, if necessary */
+p, label, input, select {
+    font-family: 'Montserrat';
+}
+
+/* Colors */
+:root {
+    --primary-color: #bccbcf; /* Header and footer color */
+    --secondary-color: #15294e; /* Dark blue for accents */
+    --text-color: #000000;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+}
+
+header .logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 2rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Text shadow */
+}
+
+/* Introduction Section */
+.intro {
+    padding: 30px;
+    background-color: #f9f9f9;
+}
+
+.intro-content h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Registration Form Section */
+.registration-form {
+    padding: 30px;
+    background-color:var(--secondary-color);
+}
+
+.registration-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color:white;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.form-group input[type="date"] {
+    display: inline-block;
+    width: calc(50% - 10px);
+    margin-right: 10px;
+}
+
+.form-group select {
+    display: inline-block;
+    width: calc(50% - 10px);
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border: 1;
+    border-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 20px auto 0; 
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    text-align: center;
+    flex-basis: 100%;
+    margin: 10px 0;
+}
+
+.footer-logo img {
+    max-width: 100px; /* Adjust the size of the logo */
+}
+
+.footer-info p,
+.footer-info .social-media a {
+    margin: 0;
+    color: var(--text-color);
+}
+
+.footer-info .social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-info .social-media a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero .hero-text {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .footer-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-info .social-media,
+    .footer-info p,
+    .footer-logo {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo img {
+        max-width: 80px; /* Adjust the size for smaller screens */
+    }
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.social-media a i {
+    margin-right: 5px;
+    font-size: 1.2em;
+}
+
+/* hover effects */
+.social-media a:hover {
+    color: #007BFF; /* Change color on hover */
+}

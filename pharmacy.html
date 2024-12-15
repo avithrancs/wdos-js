@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy</title>
+    <link rel="stylesheet" href="../styles/pharmacystyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <!-- Logo -->
+            <img src="/images/Logo.webp" alt="Hospital Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="consultation.html">Consultation</a></li>
+                <li><a href="pharmacy.html">Pharmacy</a></li>
+                <li><a href="registration.html">Registration</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <!-- Hero Section -->
+   <section class="hero">
+    <img src="/images/pharmacy.png" alt="Hero Image">
+    <div class="hero-text">
+        <h1>PHARMACY</h1>
+    </div>
+</section> 
+
+    <section class="pharmacy-showcase">
+        
+        
+        <div id="medicine-section">
+            <!-- Updated from json -->
+        </div>
+    </section>
+
+    <h3>Current Order</h3>
+    <table id="order-table">
+        <thead>
+            <tr>
+                <th>Medicine</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="order-items"></tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Price:</td>
+                <td id="total-price">$0</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Buttons -->
+   
+    <div class="button-container">
+        <button id="buy-now" class="button">Buy Now</button>
+        <button id="save-favorites" class="button">Add to Favourites</button>
+        <button id="apply-favorites" class="button">Apply Favourites</button>
+        <button id="clear-cart" class="button">Clear Cart</button>
+    </div>
+    
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-info">
+            <div class="footer-logo">
+                <img src="/images/Logo.webp" alt="Hospital Logo">
+            </div>
+            <p>Contact us: <a href="mailto:info@hospital.com">info@hospital.com</a> +94 706646966</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="pharmacyscript.js" defer></script>
+</body>
+</html>
