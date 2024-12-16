@@ -27,11 +27,10 @@ if (order && order.length > 0) {
         <td><strong>LKR ${total.toFixed(2)}</strong></td>
     `;
     orderItems.appendChild(totalRow);
-    } 
-    // else {
-    //     alert("Your cart is empty. Please add items to your cart first.");
-    //     window.location.href = "order.html"; // Redirect back to order page
-    // }
+    } else {
+        alert("Your cart is empty. Please add items to your cart first.");
+        window.location.href = "order.html"; // Redirect back to order page
+    }
 
 // Show or hide credit card details fields based on payment method
 const paymentMethodSelect = document.getElementById("payment-method");
