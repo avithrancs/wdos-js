@@ -319,9 +319,9 @@ table tfoot td {
     }
 
     /* Stack the table data vertically on small screens */
-    table, thead, tbody, th, td, tr {
+    /* table, thead, tbody, th, td, tr {
         display: block;
-    }
+    } */
 
     table thead {
         position: absolute;
