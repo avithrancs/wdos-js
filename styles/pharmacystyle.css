@@ -186,6 +186,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 14px;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 10px;
     margin-bottom: 10px;
     /* transition: background-color 0.3s ease; */
 }
@@ -215,6 +216,7 @@ h1, h2, h3, h4, h5, h6 {
 table {
     width: 100%;
     border-collapse: collapse;
+    border: "1";
     margin: 20px 0;
     font-size: 18px;
     text-align: left;
