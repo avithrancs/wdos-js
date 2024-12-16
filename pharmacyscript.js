@@ -19,11 +19,12 @@ function displayMedicines(medicines) {
         const medicineCard = document.createElement("div");
         medicineCard.classList.add("medicine-card");
         medicineCard.innerHTML = `
-            <img src="${medicine.img}" alt="${medicine.name}">
-            <h3>${medicine.name}</h3>
+            <img src="${medicine.img}" alt="">
+            <h2>${medicine.name}</h2>
             <p>Category: ${medicine.category}</p>
             <p>Price: LKR ${medicine.price}</p>
-            <input type="number" min="0" step="1" value="0" class="quantity-input">
+            <label for="quantity-${medicine.name}" class="quantity-label">Quantity:</label>
+            <input id="quantity-${medicine.name}" type="number" min="0" step="1" value="0" class="quantity-input">
             <button data-name="${medicine.name}" data-price="${medicine.price}" class="add-to-order">Add to Order</button>
         `;
         medicineSection.appendChild(medicineCard);
@@ -34,7 +35,7 @@ function displayMedicines(medicines) {
         const button = event.target;
         const name = button.dataset.name;
         const price = parseFloat(button.dataset.price);
-        const quantityInput = button.previousElementSibling;
+        const quantityInput = button.previousElementSibling; // Access the input field
         let quantity = parseFloat(quantityInput.value);
 
         // Error handling for quantity
@@ -95,7 +96,7 @@ function updateOrderTable() {
     });
 
     total = order.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-    totalPriceElement.textContent = `$${total.toFixed(2)}`;
+    totalPriceElement.textContent = `LKR ${total.toFixed(2)}`;
 
     // Attach event listeners to "Add" and "Subtract" buttons
     document.querySelectorAll(".add-item-btn").forEach(button => {
