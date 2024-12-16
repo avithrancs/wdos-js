@@ -30,7 +30,7 @@ function displayMedicines(medicines) {
         medicineSection.appendChild(medicineCard);
     });
 
-    // Attach event listeners to "Add to Order" buttons
+    // Event listeners to "Add to Order" buttons
     const handleAddToOrder = (event) => {
         const button = event.target;
         const name = button.dataset.name;
@@ -44,7 +44,7 @@ function displayMedicines(medicines) {
             return;
         }
 
-        // Round up any fractional quantities
+        // Rounding up decimal quantities
         quantity = Math.ceil(quantity);
 
         addToOrder(name, price, quantity);
@@ -78,7 +78,7 @@ function updateOrderTable() {
     const orderItems = document.getElementById("order-items");
     const totalPriceElement = document.getElementById("total-price");
 
-    orderItems.innerHTML = ""; // Clear the table before updating
+    orderItems.innerHTML = ""; // Clear table before updating
 
     order.forEach((item, index) => {
         const row = document.createElement("tr");
@@ -98,7 +98,7 @@ function updateOrderTable() {
     total = order.reduce((sum, item) => sum + (item.price * item.quantity), 0);
     totalPriceElement.textContent = `LKR ${total.toFixed(2)}`;
 
-    // Attach event listeners to "Add" and "Subtract" buttons
+    // Event listeners to "Add" and "Subtract" buttons
     document.querySelectorAll(".add-item-btn").forEach(button => {
         button.addEventListener("click", handleAddItem);
     });
