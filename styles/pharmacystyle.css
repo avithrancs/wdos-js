@@ -122,7 +122,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     border-radius: 5px;
     border: 1px solid #ddd;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    /* transition: box-shadow 0.3s ease, transform 0.3s ease; */
 }
 
 .showcase-item img {
@@ -152,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
 }
 
 /* Medicine image styling */
@@ -187,7 +187,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 4px;
     cursor: pointer;
     margin-bottom: 10px;
-    transition: background-color 0.3s ease;
+    /* transition: background-color 0.3s ease; */
 }
 
 .quantity-container {
@@ -274,7 +274,7 @@ table tfoot td {
     border-radius: 4px;
     cursor: pointer;
     margin-bottom: 10px;
-    transition: background-color 0.3s ease;
+    /* transition: background-color 0.3s ease; */
     justify-content: center;
 }
 
@@ -307,7 +307,7 @@ footer {
     text-decoration: none;
     color: var(--text-color);
     font-weight: bold;
-    transition: color 0.3s ease;
+    /* transition: color 0.3s ease; */
 }
 
 .footer-info .social-media a:hover {
@@ -377,7 +377,7 @@ footer {
     border-radius: 4px;
     border: 1px solid #000000;
     box-sizing: border-box;
-    transition: border-color 0.3s;
+    /* transition: border-color 0.3s; */
 }
 
 .payment-form input:focus,
@@ -407,7 +407,7 @@ footer {
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    /* transition: background-color 0.3s; */
 }
 
 .payment-form button:hover {
