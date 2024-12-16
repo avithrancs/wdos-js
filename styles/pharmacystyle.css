@@ -306,63 +306,6 @@ table tfoot td {
     border: 1px solid #ddd;
 }
 
-/* Media Queries for Responsiveness */
-
-/* For small screens (tablets and below) */
-@media (max-width: 768px) {
-    table {
-        font-size: 16px; /* Smaller font size for smaller screens */
-    }
-
-    table thead th, table tbody td {
-        padding: 10px 12px; /* Adjust padding */
-    }
-
-    /* Stack the table data vertically on small screens */
-    /* table, thead, tbody, th, td, tr {
-        display: block;
-    } */
-
-    table thead {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-    }
-
-    table tbody tr {
-        border: none;
-        margin-bottom: 10px;
-        padding: 10px;
-    }
-
-    table tbody td {
-        display: block;
-        text-align: right;
-        padding-left: 50%;
-        position: relative;
-    }
-
-    table tbody td:before {
-        content: attr(data-label); /* Show the label as a prefix for each cell */
-        position: absolute;
-        left: 10px;
-        top: 10px;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-}
-
-/* For very small screens (mobile phones) */
-@media (max-width: 480px) {
-    table {
-        font-size: 14px; /* Further reduce font size on very small screens */
-    }
-
-    table thead th, table tbody td {
-        padding: 8px 10px; /* Even smaller padding */
-    }
-}
-
 .button-container {
     display: flex;
     justify-content: center; /* Center horizontally */
